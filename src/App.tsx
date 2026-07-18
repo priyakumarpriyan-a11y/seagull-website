@@ -39,7 +39,7 @@ const Navbar = () => {
       // Determine active section based on scroll position
       const sections = ['home', 'about-us', 'services', 'infrastructure', 'network', 'industries', 'contact'];
       let currentSection = 'home';
-      
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -57,7 +57,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-[0_4px_20px_rgb(0,0,0,0.03)] py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-[0_4px_20px_rgb(0,0,0,0.03)] py-4' : 'bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.25)_50%,rgba(255,255,255,0)_100%)] py-6'}`}>
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img src={logoImg} alt="Seagull Logo" className="h-10 w-auto object-contain" />
@@ -77,13 +77,13 @@ const Navbar = () => {
           })}
         </div>
 
-        <a href="#contact" className="hidden lg:flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-white font-semibold text-sm hover:bg-brightblue hover:shadow-[0_4px_14px_rgba(21,101,192,0.3)] hover:-translate-y-0.5 transition-all duration-300 group">
+        <a href="#contact" className="hidden lg:flex items-center gap-2 px-7 py-3 rounded-md bg-[#0CAE49] text-white font-semibold text-sm hover:bg-[#20b858] hover:shadow-[0_4px_14px_rgba(37,211,102,0.4)] hover:-translate-y-0.5 transition-all duration-300 group">
           Request a Quote
           <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
         </a>
 
         {/* Mobile menu button */}
-        <button 
+        <button
           className="lg:hidden text-navy p-2 -mr-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -107,7 +107,7 @@ const Navbar = () => {
           >
             <div className="flex items-center justify-between px-6 py-5 border-b border-brand-bg/50">
               <img src={logoImg} alt="Seagull Logo" className="h-10 w-auto object-contain" />
-              <button 
+              <button
                 className="text-navy p-2 -mr-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -119,9 +119,9 @@ const Navbar = () => {
                 const sectionId = item.toLowerCase().replace(' ', '-');
                 const isActive = activeSection === sectionId;
                 return (
-                  <a 
-                    key={item} 
-                    href={`#${sectionId}`} 
+                  <a
+                    key={item}
+                    href={`#${sectionId}`}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`font-sans text-[16px] font-semibold transition-colors ${isActive ? 'text-primary' : 'text-brand-text hover:text-primary'}`}
                   >
@@ -130,10 +130,10 @@ const Navbar = () => {
                 );
               })}
               <div className="pt-4 mt-2 border-t border-brand-bg/80">
-                <a 
-                  href="#contact" 
+                <a
+                  href="#contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-primary text-white font-semibold text-[15px]"
+                  className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-[#25D366] hover:bg-[#20b858] transition-colors text-white font-semibold text-[15px]"
                 >
                   Request a Quote
                   <ArrowRight size={16} />
