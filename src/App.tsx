@@ -99,12 +99,21 @@ const Navbar = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-brand-bg/50 shadow-[0_20px_40px_rgb(0,0,0,0.08)] overflow-hidden origin-top"
+            className="lg:hidden absolute top-0 left-0 w-full bg-white shadow-[0_20px_40px_rgb(0,0,0,0.1)] overflow-hidden flex flex-col"
           >
+            <div className="flex items-center justify-between px-6 py-5 border-b border-brand-bg/50">
+              <img src={logoImg} alt="Seagull Logo" className="h-10 w-auto object-contain" />
+              <button 
+                className="text-navy p-2 -mr-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+            </div>
             <div className="flex flex-col px-6 py-6 space-y-5">
               {['Home', 'About Us', 'Services', 'Infrastructure', 'Network', 'Industries', 'Contact'].map((item) => {
                 const sectionId = item.toLowerCase().replace(' ', '-');
