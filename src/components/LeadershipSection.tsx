@@ -26,7 +26,7 @@ const LeadershipSection = () => {
               Leadership That Drives Excellence
             </span>
             <h2 className="font-heading font-extrabold text-[36px] lg:text-[46px] leading-[1.1] text-navy mb-2">
-              Mr. R. K.,
+              Mr. Radhakrishnan Rajagopal,
             </h2>
             <h3 className="font-heading font-bold text-[24px] lg:text-[32px] leading-[1.2] text-navy/80 mb-6">
               Chairman & Managing Director
@@ -65,14 +65,14 @@ const LeadershipSection = () => {
           >
             <img
               src={chairmanImg}
-              alt="Mr. R. K. - Chairman & Managing Director"
+              alt="Mr. Radhakrishnan Rajagopal - Chairman & Managing Director"
               className="w-full h-full object-cover object-bottom"
               style={{ WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)' }}
             />
 
             {/* Floating Name Badge */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 lg:left-12 lg:translate-x-0 bg-navy/95 backdrop-blur-sm border-l-4 border-[#D32F2F] rounded-r-xl px-6 py-4 shadow-2xl min-w-[280px]">
-              <h4 className="font-heading font-bold text-white text-[18px] mb-1">Mr. R. K.</h4>
+              <h4 className="font-heading font-bold text-white text-[18px] mb-1">Mr. Radhakrishnan Rajagopal</h4>
               <p className="text-white/70 text-[13px]">Chairman & Managing Director</p>
             </div>
           </motion.div>
