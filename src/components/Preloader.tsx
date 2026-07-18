@@ -74,7 +74,7 @@ const Preloader = () => {
               autoPlay
               muted
               playsInline
-              className="h-16 md:h-20 w-auto object-contain drop-shadow-sm mix-blend-multiply"
+              className="h-16 md:h-20 w-auto object-contain mix-blend-multiply"
             />
           </motion.div>
         </motion.div>
