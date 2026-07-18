@@ -170,11 +170,12 @@ const FooterSection = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span className="text-white/70 text-[14px]">+91-44-25249086 / 25216512</span>
+                <span className="text-white/70 text-[14px]">044-25264513 & 044-42164302 / 044-25249086 / 25264505 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />
-                <span className="text-white/70 text-[14px]">seagullcfa@gmail.com</span>
+                <span className="text-white/70 text-[14px]">seagullcfa@seagullclearing.net<br />seagullcfa@seagullgroup.co
+                  <br />radhakrishnan@seagullclearing.net<br />radhakrishnan@seagullgroup.co </span>
               </li>
               <li className="flex gap-3">
                 <Clock size={18} className="text-primary shrink-0 mt-0.5" />

@@ -25,6 +25,15 @@ import serviceTransportImg from './assets/service_transport.png';
 import serviceWarehousingImg from './assets/service_warehousing.png';
 
 import logoImg from './assets/logo-seagull.png';
+import clLogo1 from './assets/cl-logo-1.png';
+import clLogo2 from './assets/cl-logo-2.png';
+import clLogo3 from './assets/cl-logo-3.png';
+import clLogo4 from './assets/cl-logo-4.png';
+import clLogo5 from './assets/cl-logo-5.png';
+import clLogo6 from './assets/cl-logo-6.png';
+import clLogo7 from './assets/cl-logo-7.png';
+import clLogo8 from './assets/cl-logo-8.png';
+import clLogo9 from './assets/cl-logo-9.png';
 
 // Navbar
 const Navbar = () => {
@@ -188,50 +197,15 @@ const TrustStrip = () => {
 // ClientLogos
 const ClientLogos = () => {
   const logos = [
-    // Maersk
-    <div key="maersk" className="flex items-center gap-2">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#currentColor" opacity="0.15" /><path d="M4 14L14 4L24 14L14 24L4 14Z" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.5" /><path d="M14 8L20 14L14 20L8 14L14 8Z" fill="currentColor" /></svg>
-      <span className="font-heading font-black text-[18px] tracking-[0.05em]">MAERSK</span>
-    </div>,
-    // DHL
-    <div key="dhl" className="flex items-center">
-      <span className="font-heading font-black text-[22px] italic tracking-[-0.02em]" style={{ letterSpacing: '-0.5px' }}>
-        <span style={{ color: 'currentColor' }}>D</span>
-        <span style={{ color: 'currentColor' }}>H</span>
-        <span style={{ color: 'currentColor' }}>L</span>
-      </span>
-    </div>,
-    // Wipro
-    <div key="wipro" className="flex items-center gap-1.5">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" /><circle cx="11" cy="11" r="5" fill="currentColor" opacity="0.4" /><circle cx="11" cy="11" r="2" fill="currentColor" /></svg>
-      <span className="font-sans font-semibold text-[17px] tracking-wide">wipro</span>
-    </div>,
-    // TATA
-    <div key="tata" className="flex items-center gap-2">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><ellipse cx="13" cy="13" rx="12" ry="12" stroke="currentColor" strokeWidth="1.5" /><path d="M5 13 Q13 5 21 13" stroke="currentColor" strokeWidth="2" fill="none" /><path d="M13 5 L13 21" stroke="currentColor" strokeWidth="1.5" /></svg>
-      <span className="font-heading font-extrabold text-[17px] tracking-[0.1em]">TATA</span>
-    </div>,
-    // Cipla
-    <div key="cipla">
-      <span className="font-heading font-bold text-[20px] tracking-wider">Cipla</span>
-    </div>,
-    // TVS
-    <div key="tvs" className="flex items-center gap-1.5">
-      <span className="font-heading font-extrabold text-[20px] tracking-[0.08em]">TVS</span>
-      <svg width="20" height="14" viewBox="0 0 20 14" fill="none"><path d="M2 7C2 7 6 2 10 7C14 12 18 7 18 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
-    </div>,
-    // Amazon
-    <div key="amazon">
-      <span className="font-heading font-bold text-[20px] tracking-tight">amazon</span>
-    </div>,
-    // Reliance
-    <div key="reliance" className="flex items-center gap-2">
-      <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="11" stroke="currentColor" strokeWidth="1.5" /><path d="M8 13 L13 8 L18 13 L13 18 Z" fill="currentColor" opacity="0.6" /></svg>
-      <div className="flex flex-col leading-none">
-        <span className="font-heading font-extrabold text-[13px] tracking-wider">Reliance</span>
-        <span className="font-sans text-[9px] tracking-widest opacity-70">INDUSTRIES LIMITED</span>
-      </div>
-    </div>,
+    clLogo1,
+    clLogo2,
+    clLogo3,
+    clLogo4,
+    clLogo5,
+    clLogo6,
+    clLogo7,
+    clLogo8,
+    clLogo9,
   ];
 
   return (
@@ -251,8 +225,8 @@ const ClientLogos = () => {
           className="flex whitespace-nowrap gap-16 lg:gap-24 px-12 items-center hover:[animation-play-state:paused]"
         >
           {[...logos, ...logos].map((logo, i) => (
-            <div key={i} className="text-brand-text/30 hover:text-brand-text/70 transition-colors duration-300 cursor-default select-none shrink-0">
-              {logo}
+            <div key={i} className="transition-all duration-300 cursor-default select-none shrink-0 opacity-50 hover:opacity-100 grayscale hover:grayscale-0 flex items-center justify-center h-12 lg:h-16">
+              <img src={logo} alt={`Client logo ${i + 1}`} className="h-full w-auto object-contain max-w-[160px]" />
             </div>
           ))}
         </motion.div>

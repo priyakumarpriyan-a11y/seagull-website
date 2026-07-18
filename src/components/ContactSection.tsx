@@ -107,8 +107,8 @@ const ContactSection = () => {
             {/* Contact Details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { icon: <Phone size={24} />, title: "Phone", value: "+91-44-25249086 / 25216512" },
-                { icon: <Mail size={24} />, title: "Email", value: "seagullcfa@gmail.com" },
+                { icon: <Phone size={24} />, title: "Phone", value: "044-25264513 044-42164302 044-25249086 / 25264505 " },
+                { icon: <Mail size={24} />, title: "Email", value: "seagullcfa@seagullclearing.net seagullcfa@seagullgroup.co radhakrishnan@seagullclearing.net radhakrishnan@seagullgroup.co " },
                 { icon: <MapPin size={24} />, title: "Head Office", value: "No.20, Beach House, Second Lane Beach, Chennai - 600 001" },
                 { icon: <Clock size={24} />, title: "Working Hours", value: "Mon-Sat: 9:00 AM - 6:00 PM" }
               ].map((item, idx) => (
@@ -138,7 +138,7 @@ const ContactSection = () => {
             </div>
 
             {/* Map Preview */}
-            <div className="relative rounded-[24px] overflow-hidden bg-white/5 border border-white/10 p-2 group">
+            {/* <div className="relative rounded-[24px] overflow-hidden bg-white/5 border border-white/10 p-2 group">
               <div className="absolute inset-0 bg-[#0B3A66]/50 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center text-center p-6 opacity-100 group-hover:bg-[#0B3A66]/70 transition-all">
                 <MapPin className="w-10 h-10 text-[#4ade80] mb-3" />
                 <p className="font-medium text-white/90 mb-4 max-w-[250px]">Interactive Google Map will be integrated here.</p>
@@ -146,9 +146,9 @@ const ContactSection = () => {
                   Open in Google Maps
                 </button>
               </div>
-              {/* Map Placeholder Image */}
+             
               <div className="w-full h-[200px] bg-slate-800 rounded-[16px] opacity-30 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Chennai,India&zoom=11&size=600x300&style=feature:all|element:labels|visibility:off&style=feature:water|element:geometry|color:0x1565C0')] bg-cover bg-center" />
-            </div>
+            </div> */}
 
           </motion.div>
 

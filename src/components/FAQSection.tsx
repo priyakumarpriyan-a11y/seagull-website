@@ -181,7 +181,7 @@ const FAQSection = () => {
               </p>
 
               <div className="flex flex-col gap-3 relative z-10 mt-auto">
-                <a href="tel:+914425249086" className="w-full bg-primary text-white px-6 py-4 rounded-xl font-semibold text-[15px] transition-all hover:bg-brightblue hover:shadow-[0_10px_20px_rgba(21,101,192,0.2)] hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group cursor-pointer">
+                <a href="tel:04425264513" className="w-full bg-primary text-white px-6 py-4 rounded-xl font-semibold text-[15px] transition-all hover:bg-brightblue hover:shadow-[0_10px_20px_rgba(21,101,192,0.2)] hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group cursor-pointer">
                   Talk to an Expert
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </a>
@@ -195,7 +195,7 @@ const FAQSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
 
               <motion.a
-                href="tel:+914425249086"
+                href="tel:04425264513"
                 initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-white p-5 rounded-[20px] shadow-sm border border-brand-text/5 flex items-center gap-4 hover:-translate-y-1 hover:shadow-md transition-all cursor-pointer group"
               >
@@ -204,12 +204,12 @@ const FAQSection = () => {
                 </div>
                 <div>
                   <div className="text-[12px] font-bold text-brand-muted uppercase tracking-wider mb-0.5">Phone Support</div>
-                  <div className="font-heading font-bold text-navy text-[15px]">+91-44-25249086 / 25216512</div>
+                  <div className="font-heading font-bold text-navy text-[15px]">044-25264513 <br /> 044-42164302 <br /> 044-25249086 / 25264505</div>
                 </div>
               </motion.a>
 
               <motion.a
-                href="mailto:seagullcfa@gmail.com"
+                href="mailto:seagullcfa@seagullclearing.net"
                 initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}
                 className="bg-white p-5 rounded-[20px] shadow-sm border border-brand-text/5 flex items-center gap-4 hover:-translate-y-1 hover:shadow-md transition-all cursor-pointer group"
               >
@@ -218,7 +218,7 @@ const FAQSection = () => {
                 </div>
                 <div>
                   <div className="text-[12px] font-bold text-brand-muted uppercase tracking-wider mb-0.5">Email Enquiry</div>
-                  <div className="font-heading font-bold text-navy text-[15px]">seagullcfa@gmail.com</div>
+                  <div className="font-heading font-bold text-navy text-[15px]">seagullcfa@seagullclearing.net <br /> seagullcfa@seagullgroup.co <br /> radhakrishnan@seagullclearing.net <br /> radhakrishnan@seagullgroup.co</div>
                 </div>
               </motion.a>
 

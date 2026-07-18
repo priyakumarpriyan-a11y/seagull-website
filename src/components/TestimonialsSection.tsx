@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { Quote, ArrowRight, Building, Activity, Star } from 'lucide-react';
 
-import avatarRajesh from '../assets/avatar_rajesh.png';
-import avatarPriya from '../assets/avatar_priya.png';
-import avatarSuresh from '../assets/avatar_suresh.png';
-import avatarMeena from '../assets/avatar_meena.png';
+import avatarBata from '../assets/avatar_bata.png';
+import avatarBhaane from '../assets/avatar_bhaane.png';
+import avatarInventaa from '../assets/avatar_inventaa.png';
+import avatarNissin from '../assets/avatar_nissin.png';
 
 const StarRating = ({ count = 5 }: { count?: number }) => (
   <div className="flex items-center gap-1">
@@ -15,45 +15,45 @@ const StarRating = ({ count = 5 }: { count?: number }) => (
 );
 
 const featuredTestimonial = {
-  name: 'Rajesh Nair',
-  company: 'Apex Pharma Exports Pvt. Ltd.',
-  designation: 'Director – Supply Chain',
-  industry: 'Pharmaceuticals',
-  avatar: avatarRajesh,
+  name: 'C. Govindaraju & Ashwani Kumar',
+  company: 'Bata India Limited',
+  designation: 'Supply Chain Leadership',
+  industry: 'Retail & Footwear',
+  avatar: avatarBata,
   quote:
-    "Seagull has been our trusted logistics partner for over seven years. Their expertise in pharmaceutical freight — including cold-chain compliance, customs documentation, and time-critical clearance — has been exceptional. We've never missed a shipment deadline with them, and their team responds at any hour. For a company like ours where regulatory precision is non-negotiable, Seagull is genuinely irreplaceable.",
+    "Seagull has been instrumental in managing our supply chain complexities at Bata India. Their expertise in warehousing, distribution, and timely customs clearance ensures our retail outlets are always stocked. They understand the fast-paced nature of the footwear industry and consistently deliver reliable, pan-India logistics support.",
 };
 
 const supportingTestimonials = [
   {
-    name: 'Priya Venkataraman',
-    company: 'Meridian Auto Components Ltd.',
-    designation: 'Head of Procurement',
-    industry: 'Automotive',
-    avatar: avatarPriya,
+    name: 'Rakshit Rustogi',
+    company: 'Bhaane Retail Private Limited',
+    designation: 'Head of Operations',
+    industry: 'Apparel & Retail',
+    avatar: avatarBhaane,
     rating: 5,
     quote:
-      "Moving automotive components across Chennai, Pune, and Ahmedabad used to be a logistical nightmare — until we partnered with Seagull. Their end-to-end visibility, reliable transport fleet, and proactive communication have reduced our transit delays by over 40%. I wouldn't hesitate to recommend them to any manufacturer.",
+      "Working with Seagull has transformed our logistics framework. From smooth customs processing for our fashion imports to seamless nationwide forwarding, their team is highly proactive. They provide the agility required in modern retail.",
   },
   {
-    name: 'Suresh Kumar Agarwal',
-    company: 'GlobalTex Trading Co.',
+    name: 'V. Ravichandran',
+    company: 'Inventaa LED Lights Private Limited',
     designation: 'Managing Director',
-    industry: 'Import & Export',
-    avatar: avatarSuresh,
+    industry: 'Electronics',
+    avatar: avatarInventaa,
     rating: 5,
     quote:
-      "We handle import and export across 12 countries, and customs clearance used to eat up weeks of our time. Seagull's clearance team handled our first shipment flawlessly — all documentation, duty calculations, and port coordination were managed seamlessly. Three years on, they remain our first call for every international consignment.",
+      "For importing sensitive electronic components, precision is key. Seagull's customs clearance team handles our documentation flawlessly, preventing any delays. Their warehousing solutions ensure our inventory is safe and accessible.",
   },
   {
-    name: 'Meena Srinivasan',
-    company: 'Brighter India Retail Chain',
-    designation: 'VP – Operations',
-    industry: 'Retail & FMCG',
-    avatar: avatarMeena,
+    name: 'S. Sreedharan',
+    company: 'Nissin ABC India Private Limited',
+    designation: 'Logistics Director',
+    industry: 'Manufacturing',
+    avatar: avatarNissin,
     rating: 5,
     quote:
-      "Our retail chain runs on speed. When Seagull joined our logistics network, on-time delivery rates improved dramatically. Their warehousing facility in Chennai is well-organised, their tracking is real-time, and their customer support team genuinely understands FMCG urgency. A true logistics partner, not just a vendor.",
+      "Seagull provides exceptional end-to-end logistics. Their fleet reliability and transparent tracking give us complete peace of mind. We consider them a core partner in maintaining our nationwide distribution efficiency.",
   },
 ];
 
