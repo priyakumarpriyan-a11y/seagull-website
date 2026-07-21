@@ -67,7 +67,7 @@ const LeadershipSection = () => {
               src={chairmanImg}
               alt="Mr. Radhakrishnan Rajagopal - Chairman & Managing Director"
               className="w-full h-full object-cover object-bottom"
-              style={{ WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%)' }}
+
             />
 
             {/* Floating Name Badge */}

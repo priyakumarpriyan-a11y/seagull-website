@@ -57,13 +57,6 @@ const supportingTestimonials = [
   },
 ];
 
-const metrics = [
-  { icon: <Building className="w-6 h-6" />, value: '200+', label: 'Long-Term Clients', bg: 'bg-blue-50', color: 'text-primary' },
-  { icon: <Activity className="w-6 h-6" />, value: '50,000+', label: 'Shipments Delivered', bg: 'bg-green-50', color: 'text-green-600' },
-  { icon: <Star className="w-6 h-6" />, value: '4.9/5', label: 'Client Satisfaction', bg: 'bg-amber-50', color: 'text-amber-500' },
-  { icon: <Activity className="w-6 h-6" />, value: '98%', label: 'On-Time Delivery', bg: 'bg-indigo-50', color: 'text-indigo-600' },
-];
-
 const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="relative bg-white py-[140px] overflow-hidden">
@@ -189,25 +182,6 @@ const TestimonialsSection = () => {
             ))}
           </div>
         </div>
-
-        {/* Success Metrics */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] mb-24 grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y lg:divide-y-0 lg:divide-x divide-slate-100"
-        >
-          {metrics.map((m, i) => (
-            <div key={i} className="flex flex-col items-center text-center px-4 py-4 lg:py-0">
-              <div className={`w-12 h-12 ${m.bg} ${m.color} rounded-xl flex items-center justify-center mb-4`}>
-                {m.icon}
-              </div>
-              <span className="text-3xl font-extrabold text-navy mb-1">{m.value}</span>
-              <span className="text-sm font-semibold text-brand-muted uppercase tracking-wider">{m.label}</span>
-            </div>
-          ))}
-        </motion.div>
 
         {/* Bottom CTA */}
         <motion.div
