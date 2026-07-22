@@ -170,7 +170,7 @@ const FooterSection = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span className="text-white/70 text-[14px]">044-25264513 & 044-42164302 / 044-25249086 / 25264505 </span>
+                <span className="text-white/70 text-[14px]">044-25249086 / 044-25264505</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />

@@ -1,10 +1,5 @@
 import { motion } from 'framer-motion';
-import { Quote, ArrowRight, Building, Activity, Star } from 'lucide-react';
-
-import avatarBata from '../assets/avatar_bata.png';
-import avatarBhaane from '../assets/avatar_bhaane.png';
-import avatarInventaa from '../assets/avatar_inventaa.png';
-import avatarNissin from '../assets/avatar_nissin.png';
+import { Quote, ArrowRight, Building, Star } from 'lucide-react';
 
 const StarRating = ({ count = 5 }: { count?: number }) => (
   <div className="flex items-center gap-1">
@@ -15,42 +10,30 @@ const StarRating = ({ count = 5 }: { count?: number }) => (
 );
 
 const featuredTestimonial = {
-  name: 'C. Govindaraju & Ashwani Kumar',
   company: 'Bata India Limited',
-  designation: 'Supply Chain Leadership',
   industry: 'Retail & Footwear',
-  avatar: avatarBata,
   quote:
     "Seagull has been instrumental in managing our supply chain complexities at Bata India. Their expertise in warehousing, distribution, and timely customs clearance ensures our retail outlets are always stocked. They understand the fast-paced nature of the footwear industry and consistently deliver reliable, pan-India logistics support.",
 };
 
 const supportingTestimonials = [
   {
-    name: 'Rakshit Rustogi',
     company: 'Bhaane Retail Private Limited',
-    designation: 'Head of Operations',
     industry: 'Apparel & Retail',
-    avatar: avatarBhaane,
     rating: 5,
     quote:
       "Working with Seagull has transformed our logistics framework. From smooth customs processing for our fashion imports to seamless nationwide forwarding, their team is highly proactive. They provide the agility required in modern retail.",
   },
   {
-    name: 'V. Ravichandran',
     company: 'Inventaa LED Lights Private Limited',
-    designation: 'Managing Director',
     industry: 'Electronics',
-    avatar: avatarInventaa,
     rating: 5,
     quote:
       "For importing sensitive electronic components, precision is key. Seagull's customs clearance team handles our documentation flawlessly, preventing any delays. Their warehousing solutions ensure our inventory is safe and accessible.",
   },
   {
-    name: 'S. Sreedharan',
     company: 'Nissin ABC India Private Limited',
-    designation: 'Logistics Director',
     industry: 'Manufacturing',
-    avatar: avatarNissin,
     rating: 5,
     quote:
       "Seagull provides exceptional end-to-end logistics. Their fleet reliability and transparent tracking give us complete peace of mind. We consider them a core partner in maintaining our nationwide distribution efficiency.",
@@ -117,20 +100,16 @@ const TestimonialsSection = () => {
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
 
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center relative z-10">
-              {/* Left: Author Info */}
+              {/* Left: Company Info */}
               <div className="w-full lg:w-1/3 flex flex-col gap-6 shrink-0">
                 <Quote className="w-14 h-14 text-primary/15" />
                 <StarRating />
-                <div className="flex items-center gap-5">
-                  <img
-                    src={featuredTestimonial.avatar}
-                    alt={featuredTestimonial.name}
-                    className="w-20 h-20 rounded-full object-cover object-top shadow-[0_8px_20px_rgba(0,0,0,0.12)] border-2 border-white ring-2 ring-primary/10"
-                  />
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center text-primary shrink-0 border border-primary/10 shadow-sm">
+                    <Building className="w-8 h-8" />
+                  </div>
                   <div>
-                    <h4 className="text-xl font-bold text-navy">{featuredTestimonial.name}</h4>
-                    <p className="text-brand-muted font-medium text-[14px]">{featuredTestimonial.designation}</p>
-                    <p className="text-primary font-semibold text-[13px]">{featuredTestimonial.company}</p>
+                    <h4 className="text-xl font-bold text-navy leading-snug">{featuredTestimonial.company}</h4>
                     <span className="inline-block mt-2 px-3 py-1 bg-primary/8 text-primary text-[12px] font-bold rounded-full tracking-wide">
                       {featuredTestimonial.industry}
                     </span>
@@ -151,7 +130,7 @@ const TestimonialsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {supportingTestimonials.map((t, index) => (
               <motion.div
-                key={t.name}
+                key={t.company}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -166,16 +145,13 @@ const TestimonialsSection = () => {
                 <p className="text-[16px] text-brand-muted leading-relaxed mb-8 grow relative z-10">
                   "{t.quote}"
                 </p>
-                <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-100 relative z-10">
-                  <img
-                    src={t.avatar}
-                    alt={t.name}
-                    className="w-12 h-12 rounded-full object-cover object-top shadow-md border border-white ring-1 ring-primary/10 group-hover:scale-105 transition-transform"
-                  />
+                <div className="flex items-center gap-3.5 mt-auto pt-6 border-t border-slate-100 relative z-10">
+                  <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:scale-105 transition-transform border border-primary/10">
+                    <Building className="w-5 h-5" />
+                  </div>
                   <div>
-                    <h5 className="font-bold text-navy text-[15px]">{t.name}</h5>
-                    <p className="text-[12px] text-brand-muted font-medium">{t.designation}</p>
-                    <p className="text-[12px] text-primary font-semibold">{t.company}</p>
+                    <h5 className="font-bold text-navy text-[15px] leading-tight">{t.company}</h5>
+                    <p className="text-[12px] text-primary font-semibold mt-0.5">{t.industry}</p>
                   </div>
                 </div>
               </motion.div>
@@ -217,3 +193,4 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
+

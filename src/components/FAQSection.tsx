@@ -204,7 +204,7 @@ const FAQSection = () => {
                 </div>
                 <div>
                   <div className="text-[12px] font-bold text-brand-muted uppercase tracking-wider mb-0.5">Phone Support</div>
-                  <div className="font-heading font-bold text-navy text-[15px]">044-25264513 <br /> 044-42164302 <br /> 044-25249086 / 25264505</div>
+                  <div className="font-heading font-bold text-navy text-[15px]">044-25249086 / 044-25264505</div>
                 </div>
               </motion.a>
 
