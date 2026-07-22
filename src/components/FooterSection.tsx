@@ -174,8 +174,8 @@ const FooterSection = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />
-                <span className="text-white/70 text-[14px]">seagullcfa@seagullclearing.net<br />seagullcfa@seagullgroup.co
-                  <br />radhakrishnan@seagullclearing.net<br />radhakrishnan@seagullgroup.co </span>
+                <span className="text-white/70 text-[14px]">seagullcfa@seagullclearing.net
+                  <br />radhakrishnan@seagullclearing.net</span>
               </li>
               <li className="flex gap-3">
                 <Clock size={18} className="text-primary shrink-0 mt-0.5" />

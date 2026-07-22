@@ -218,7 +218,7 @@ const FAQSection = () => {
                 </div>
                 <div>
                   <div className="text-[12px] font-bold text-brand-muted uppercase tracking-wider mb-0.5">Email Enquiry</div>
-                  <div className="font-heading font-bold text-navy text-[15px]">seagullcfa@seagullclearing.net <br /> seagullcfa@seagullgroup.co <br /> radhakrishnan@seagullclearing.net <br /> radhakrishnan@seagullgroup.co</div>
+                  <div className="font-heading font-bold text-navy text-[15px]">seagullcfa@seagullclearing.net <br />radhakrishnan@seagullclearing.net</div>
                 </div>
               </motion.a>
 

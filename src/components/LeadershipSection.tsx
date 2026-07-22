@@ -34,7 +34,7 @@ const LeadershipSection = () => {
             <div className="w-12 h-1 bg-[#D32F2F] mb-8" />
 
             <p className="text-gray-600 text-[15px] lg:text-[16px] leading-relaxed mb-6">
-              The journey of Seagull Shipping is deeply inspired by the vision and leadership of Mr. Radhakrishnan Rajagopal, Chairman & Managing Director. With foresight, determination and an unwavering commitment to excellence, he laid the foundation of an organization built on trust, integrity and customer success. Under his guidance, Seagull has grown from a customs clearing & forwarding agency into a fully integrated logistics solutions provider with a strong presence across India and global reach.
+              The journey of Seagull grouping is deeply inspired by the vision and leadership of Mr. Radhakrishnan Rajagopal, Chairman & Managing Director. With foresight, determination and an unwavering commitment to excellence, he laid the foundation of an organization built on trust, integrity and customer success. Under his guidance, Seagull has grown from a customs clearing & forwarding agency into a fully integrated logistics solutions provider with a strong presence across India and global reach.
             </p>
             <p className="text-gray-600 text-[15px] lg:text-[16px] leading-relaxed">
               His hands-on approach, deep industry expertise and passion for innovation continue to empower our teams and drive the company towards greater heights. His belief is simple yet powerful – <strong>"Deliver Excellence. Build Relationships. Create Value."</strong>

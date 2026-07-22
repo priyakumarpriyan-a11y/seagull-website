@@ -108,7 +108,7 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { icon: <Phone size={24} />, title: "Phone", value: "044-25264513 044-42164302 044-25249086 / 25264505 " },
-                { icon: <Mail size={24} />, title: "Email", value: "seagullcfa@seagullclearing.net seagullcfa@seagullgroup.co radhakrishnan@seagullclearing.net radhakrishnan@seagullgroup.co " },
+                { icon: <Mail size={24} />, title: "Email", value: "seagullcfa@seagullclearing.net radhakrishnan@seagullclearing.net " },
                 { icon: <MapPin size={24} />, title: "Head Office", value: "No.20, Beach House, Second Lane Beach, Chennai - 600 001" },
                 { icon: <Clock size={24} />, title: "Working Hours", value: "Mon-Sat: 9:00 AM - 6:00 PM" }
               ].map((item, idx) => (
