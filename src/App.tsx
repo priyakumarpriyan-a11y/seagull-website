@@ -226,7 +226,7 @@ const ClientLogos = () => {
 
   const metrics = [
     { icon: Building, value: '200+', label: 'CLIENTS WORLDWIDE', bg: 'bg-blue-50/80', color: 'text-primary' },
-    { icon: Award, value: '27+', label: 'YEARS OF EXPERIENCE', bg: 'bg-amber-50/80', color: 'text-amber-500' },
+    { icon: Award, value: '25+', label: 'YEARS OF EXPERIENCE', bg: 'bg-amber-50/80', color: 'text-amber-500' },
     { icon: Activity, value: '50,000+', label: 'PROJECTS DELIVERED', bg: 'bg-emerald-50/80', color: 'text-emerald-600' },
     { icon: Globe, value: 'GLOBAL REACH', label: 'MULTIPLE INDUSTRIES', bg: 'bg-indigo-50/80', color: 'text-indigo-600' },
   ];
@@ -289,9 +289,8 @@ const ClientLogos = () => {
           {metrics.map((m, i) => (
             <div
               key={i}
-              className={`flex flex-col items-center text-center px-3 sm:px-6 py-4 lg:py-0 ${
-                i % 2 === 0 ? 'border-r border-slate-100 lg:border-r-0' : ''
-              } ${i < 2 ? 'border-b border-slate-100 pb-6 lg:border-b-0 lg:pb-0' : 'pt-6 lg:pt-0'}`}
+              className={`flex flex-col items-center text-center px-3 sm:px-6 py-4 lg:py-0 ${i % 2 === 0 ? 'border-r border-slate-100 lg:border-r-0' : ''
+                } ${i < 2 ? 'border-b border-slate-100 pb-6 lg:border-b-0 lg:pb-0' : 'pt-6 lg:pt-0'}`}
             >
               {/* Icon */}
               <div className={`w-11 h-11 ${m.bg} ${m.color} rounded-xl flex items-center justify-center mb-3 shadow-sm shrink-0`}>
@@ -301,9 +300,8 @@ const ClientLogos = () => {
               {/* Value with fixed height container */}
               <div className="h-12 flex items-center justify-center mb-1 w-full">
                 <span
-                  className={`font-heading font-extrabold text-navy tracking-tight text-center leading-tight ${
-                    m.value.length > 8 ? 'text-lg sm:text-xl lg:text-2xl' : 'text-2xl sm:text-3xl'
-                  }`}
+                  className={`font-heading font-extrabold text-navy tracking-tight text-center leading-tight ${m.value.length > 8 ? 'text-lg sm:text-xl lg:text-2xl' : 'text-2xl sm:text-3xl'
+                    }`}
                 >
                   {m.value}
                 </span>

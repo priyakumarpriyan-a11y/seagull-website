@@ -269,18 +269,18 @@ const ContactSection = () => {
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <button className="flex items-center justify-center gap-2 py-4 px-2 rounded-xl border-2 border-slate-100 font-bold text-slate-700 hover:border-[#25D366] hover:text-[#25D366] hover:bg-[#25D366]/5 transition-all">
+                    <a href="https://wa.me/914425249086" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-4 px-2 rounded-xl border-2 border-slate-100 font-bold text-slate-700 hover:border-[#25D366] hover:text-[#25D366] hover:bg-[#25D366]/5 transition-all">
                       <MessageCircle size={18} />
                       WhatsApp
-                    </button>
-                    <button className="flex items-center justify-center gap-2 py-4 px-2 rounded-xl border-2 border-slate-100 font-bold text-slate-700 hover:border-primary hover:text-primary hover:bg-primary/5 transition-all">
+                    </a>
+                    <a href="tel:04425249086" className="flex items-center justify-center gap-2 py-4 px-2 rounded-xl border-2 border-slate-100 font-bold text-slate-700 hover:border-primary hover:text-primary hover:bg-primary/5 transition-all">
                       <Phone size={18} />
                       Call Now
-                    </button>
-                    <button className="flex items-center justify-center gap-2 py-4 px-2 rounded-xl border-2 border-slate-100 font-bold text-slate-700 hover:border-slate-800 hover:text-slate-800 hover:bg-slate-50 transition-all">
+                    </a>
+                    <a href="mailto:seagullcfa@seagullclearing.net" className="flex items-center justify-center gap-2 py-4 px-2 rounded-xl border-2 border-slate-100 font-bold text-slate-700 hover:border-slate-800 hover:text-slate-800 hover:bg-slate-50 transition-all">
                       <Send size={18} />
                       Email Us
-                    </button>
+                    </a>
                   </div>
                 </div>
 
